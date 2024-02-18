@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <modules>
+        <module category="sebastianfoth\Text" context="sebastianfoth_text_lauftext" id="10700" name="Lauftext" version="1.0">
+            <inputs>
+                <input type="string" const_name="input_text" init_value="">Text</input>
+                <input type="number" const_name="input_update_in_sec" init_value="1">Update (sec)</input>
+                <input type="number" const_name="input_step" init_value="1">Schrittweite (Zeichen)</input>
+                <input type="number" const_name="input_text_width" init_value="14">Scrolltext Breite</input>
+                <input type="number" const_name="input_start_position" init_value="0">Start Position</input>
+                <input type="number" const_name="input_on_off" init_value="0">An/Aus</input>
+            </inputs>
+            <outputs>
+                <output type="string" const_name="output_text" init_value="">Text</output>
+            </outputs>
+            <imports>
+                <import>hsl20_4_timer</import>
+            </imports>
+            <translations>
+                <translation language="de" name="Lauftext" category="sebastianfoth\Text">
+                    <translation_inputs>
+                        <translation_input>Text</translation_input>
+                        <translation_input>Update (Sekunden)</translation_input>
+                        <translation_input>Schrittweite (Zeichen)</translation_input>
+                        <translation_input>Scrolltext Breite</translation_input>
+                        <translation_input>Start Position</translation_input>
+                        <translation_input>An/Aus</translation_input>
+                    </translation_inputs>
+                    <translation_outputs>
+                        <translation_output>Text</translation_output>
+                    </translation_outputs>
+                </translation>
+                <translation language="en" name="Scroll Text" category="sebastianfoth\Text">
+                    <translation_inputs>
+                        <translation_input>Text</translation_input>
+                        <translation_input>Update (Seconds)</translation_input>
+                        <translation_input>Step Length (Characters)</translation_input>
+                        <translation_input>Scrolltext Length</translation_input>
+                        <translation_input>Start Position</translation_input>
+                        <translation_input>On/Off</translation_input>
+                    </translation_inputs>
+                    <translation_outputs>
+                        <translation_output>Text</translation_output>
+                    </translation_outputs>
+                </translation>
+            </translations>
+        </module>
+    </modules>
+</config>

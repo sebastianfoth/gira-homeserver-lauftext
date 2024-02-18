@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Logik - Lauftext</title>
+        <style>
+            body { background: none; }
+        </style>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    </head>
+    <body>
+        <div class="top-title">
+            Lauftext
+        </div>
+        <div class="nav">
+            <a href="javascript:history.back()">Zurück</a> /
+            <a href="javascript:history.forward()">Vor</a> |
+            <a href="hlpsearch.html">Suchen</a> |
+            <a href="index.html">Hilfe</a> /
+            <a href="logic.html">Logik</a> / [Name des Bausteins]
+        </div>
+
+        <!-- Inhaltsverzeichnis -->
+        <div class="index">
+            <div class="index-title">
+                <a id="doc_index_1_"></a>Inhalt
+            </div>
+            <div class="t-line">
+                <div class="t-chapter">
+                    <a href="#auto_index_anchor_1_">1.</a>
+                </div>
+                <div class="t-text">
+                    <a href="#auto_index_anchor_1_">Beschreibung</a>
+                </div>
+            </div>
+            <div class="t-line">
+                <div class="t-chapter">
+                    <a href="#auto_index_anchor_2_">2.</a>
+                </div>
+                <div class="t-text">
+                    <a href="#auto_index_anchor_2_">Eingänge</a>
+                </div>
+            </div>
+            <div class="t-line">
+                <div class="t-chapter">
+                    <a href="#auto_index_anchor_3_">3.</a>
+                </div>
+                <div class="t-text">
+                    <a href="#auto_index_anchor_3_">Ausgänge</a>
+                </div>
+            </div>
+            <div class="t-line">
+                <div class="t-chapter">
+                    <a href="#auto_index_anchor_4_">4.</a>
+                </div>
+                <div class="t-text">
+                    <a href="#auto_index_anchor_4_">Sonstiges</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Inhalt -->
+        <div class="content">
+            <!-- Kapitel 1 - Beschreibung -->
+            <div class="topic">
+                <h2 class="t-line">
+                    <a id="auto_index_anchor_1_"></a>
+                    <span class="t-chapter">1.</span>
+                    <span class="t-text">Beschreibung</span>
+                </h2>
+                <div class="descr">
+                     Erstellt aus einen übergebenen Text einen Lauftext.<br>
+                </div>
+            </div>
+
+            <!-- Kapitel 2 - Eingänge -->
+            <h2 class="t-line">
+                <a id="auto_index_anchor_2_"></a>
+                <span class="t-chapter">2.</span>
+                <span class="t-text">Eingänge</span>
+            </h2>
+            <div>
+                <table class="table-in">
+                    <tr>
+                        <th class="io-nr center">Nr.</th>
+                        <th class="io-name">Name</th>
+                        <th class="io-init center">Init</th>
+                        <th class="io-descr">Beschreibung</th>
+                    </tr>
+                    <tr>
+                        <td class="io-nr input center">1</td>
+                        <td class="io-name">E1 [Text]</td>
+                        <td class="io-init string center">""</td>
+                        <td class="io-descr">
+                            <div class="descr">
+                                 Kompletter Text der als Lauftext dargestellt werden soll
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="io-nr input center">2</td>
+                        <td class="io-name">E2 [Update (Sekunden)]</td>
+                        <td class="io-init center">1</td>
+                        <td class="io-descr">
+                            <div class="descr">
+                                 Updateinterval für die Aktualisierung des Lauftextes
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="io-nr input center">3</td>
+                        <td class="io-name">E3 [Schrittweite (Zeichen)]</td>
+                        <td class="io-init center">1</td>
+                        <td class="io-descr">
+                            <div class="descr">
+                                 Schrittweite für die Ausgabe des Lauftextes
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="io-nr input center">4</td>
+                        <td class="io-name">E4 [Scrolltext Breite]</td>
+                        <td class="io-init center">14</td>
+                        <td class="io-descr">
+                            <div class="descr">
+                                 Die Breite des auszugebenden Scrolltextes
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="io-nr input center">5</td>
+                        <td class="io-name">E5 [Start Position]</td>
+                        <td class="io-init center">0</td>
+                        <td class="io-descr">
+                            <div class="descr">
+                                 Startposition an welcher mit der Ausgabe begonnen werden soll
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="io-nr input center">6</td>
+                        <td class="io-name">E6 [An/Aus]</td>
+                        <td class="io-init center">0</td>
+                        <td class="io-descr">
+                            <div class="descr">
+                                 An/Aus des Scrolltextes.
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Kapitel 3 - Ausgänge -->
+            <h2 class="t-line">
+                <a id="auto_index_anchor_3_"></a>
+                <span class="t-chapter">3.</span>
+                <span class="t-text">Ausgänge</span>
+            </h2>
+            <div>
+                <table class="table-out">
+                    <tr>
+                        <th class="io-nr center">Nr.</th>
+                        <th class="io-name">Name</th>
+                        <th class="io-init center">Init</th>
+                        <th class="o-sbc center">
+                            <a href="logic2.html#_Toc17193931">SBC</a>
+                        </th>
+                        <th class="io-descr">Beschreibung</th>
+                    </tr>
+                    <tr>
+                        <td class="io-nr output center">1</td>
+                        <td class="io-name">A1 [Text]</td>
+                        <td class="io-init string center">""</td>
+                        <td class="o-sbc center">s</td>
+                        <td class="io-descr">
+                            <div class="descr">
+                                 Der finale Scrolltext der ausgegeben wird.
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="small">s =
+                    <a href="logic2.html#_Toc17193931">send</a>, sbc =
+                    <a href="logic2.html#_Toc17193931">send by change</a>
+                </div>
+            </div>
+
+            <!-- Kapitel 4 - Sonstiges -->
+            <h2 class="t-line">
+                <a id="auto_index_anchor_4_"></a>
+                <span class="t-chapter">4.</span>
+                <span class="t-text">Sonstiges</span>
+            </h2>
+            <table class="table-logic-info">
+                <tr>
+                    <th>Neuberechnung bei Start:</th>
+                    <td>Ja</td>
+                </tr>
+                <tr>
+                    <th>Baustein ist remanent:</th>
+                    <td>Nein</td>
+                </tr>
+                <tr>
+                    <th>Interne Bezeichnung:</th>
+                    <td>23456</td>
+                </tr>
+                <tr>
+                    <th>Kategorie:
+                    </th><td>sebastianfoth\Text</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

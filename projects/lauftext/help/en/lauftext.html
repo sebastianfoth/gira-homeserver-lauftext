@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Logic - Scrolling Text</title>
+        <style>
+            body { background: none; }
+        </style>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    </head>
+    <body>
+        <div class="top-title">Scrolling Text</div>
+        <div class="nav"><a href="javascript:history.back()">Previous</a> / <a href="javascript:history.forward()">Next</a> | <a href="hlpsearch.html">Search</a> | <a href="index.html">Help</a> / <a href="logic.html">Logic</a> / [Name of module]</div><!-- Inhaltsverzeichnis --><div class="index">
+            <div class="index-title"><a id="doc_index_1_"></a>Contents</div>
+            <div class="t-line">
+                <div class="t-chapter">
+                    <a href="#auto_index_anchor_1_">1.</a>
+                </div>
+                <div class="t-text"><a href="#auto_index_anchor_1_">Description</a></div>
+            </div>
+            <div class="t-line">
+                <div class="t-chapter">
+                    <a href="#auto_index_anchor_2_">2.</a>
+                </div>
+                <div class="t-text"><a href="#auto_index_anchor_2_">Inputs</a></div>
+            </div>
+            <div class="t-line">
+                <div class="t-chapter">
+                    <a href="#auto_index_anchor_3_">3.</a>
+                </div>
+                <div class="t-text"><a href="#auto_index_anchor_3_">Outputs</a></div>
+            </div>
+            <div class="t-line">
+                <div class="t-chapter">
+                    <a href="#auto_index_anchor_4_">4.</a>
+                </div>
+                <div class="t-text"><a href="#auto_index_anchor_4_">Other</a></div>
+            </div>
+        </div><!-- Inhalt --><div class="content"><!-- Kapitel 1 - Beschreibung --><div class="topic">
+                <h2 class="t-line"><a id="auto_index_anchor_1_"></a> <span class="t-chapter">1.</span> <span class="t-text">Description</span></h2>
+                <div class="descr">Creates a scrolling text from a givenn text.<br></div>
+
+            </div><!-- Kapitel 2 - Eingänge --><h2 class="t-line"><a id="auto_index_anchor_2_"></a> <span class="t-chapter">2.</span> <span class="t-text">Inputs</span></h2>
+            <div>
+                <table class="table-in">
+                    <tr>
+                        <th class="io-nr center">No.</th>
+                        <th class="io-name">Name</th>
+                        <th class="io-init center">Initialisation</th>
+                        <th class="io-descr">Description</th>
+                    </tr>
+                    <tr>
+                        <td class="io-nr input center">1</td>
+                        <td class="io-name">E1 [Text]</td>
+                        <td class="io-init string center">&quot;&quot;</td>
+                        <td class="io-descr">
+                            <div class="descr">The complete text to be shown as scrolling text.</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="io-nr input center">2</td>
+                        <td class="io-name">E2 [Updated (seconds)]</td>
+                        <td class="io-init center">1</td>
+                        <td class="io-descr">
+                            <div class="descr">Interval for updating the scrolling text</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="io-nr input center">3</td>
+                        <td class="io-name">E3 [Steps (Characters)]</td>
+                        <td class="io-init center">1</td>
+                        <td class="io-descr">
+                            <div class="descr">Steps used every interval</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="io-nr input center">4</td>
+                        <td class="io-name">E4 [Scrolltext length]</td>
+                        <td class="io-init center">14</td>
+                        <td class="io-descr">
+                            <div class="descr">The length of the output of the scrolltext</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="io-nr input center">5</td>
+                        <td class="io-name">E5 [Start Position]</td>
+                        <td class="io-init center">0</td>
+                        <td class="io-descr">
+                            <div class="descr">Starting position on which the output should start</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="io-nr input center">6</td>
+                        <td class="io-name">E6 [On/Off]</td>
+                        <td class="io-init center">0</td>
+                        <td class="io-descr">
+                            <div class="descr">On/Off of the scrolltext</div>
+                        </td>
+                    </tr>
+                </table>
+            </div><!-- Kapitel 3 - Ausgänge --><h2 class="t-line"><a id="auto_index_anchor_3_"></a> <span class="t-chapter">3.</span> <span class="t-text">Outputs</span></h2>
+            <div>
+                <table class="table-out">
+                    <tr>
+                        <th class="io-nr center">No.</th>
+                        <th class="io-name">Name</th>
+                        <th class="io-init center">Initialisation</th>
+                        <th class="o-sbc center"><a href="logic2.html#_Toc17193931">SBC</a></th>
+                        <th class="io-descr">Description</th>
+                    </tr>
+                    <tr>
+                        <td class="io-nr output center">1</td>
+                        <td class="io-name">A1 [Text]</td>
+                        <td class="io-init string center">&quot;&quot;</td>
+                        <td class="o-sbc center">s</td>
+                        <td class="io-descr">
+                            <div class="descr">The created scroll text</div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="small">s = <a href="logic2.html#_Toc17193931">send</a>, sbc = <a href="logic2.html#_Toc17193931">send by change</a></div>
+            </div><!-- Kapitel 4 - Sonstiges --><h2 class="t-line"><a id="auto_index_anchor_4_"></a> <span class="t-chapter">4.</span> <span class="t-text">Other</span></h2>
+            <table class="table-logic-info">
+                <tr>
+                    <th>Recalculation during start:</th>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <th>Module is retentive:</th>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <th>Internal designation:</th>
+                    <td>23456</td>
+                </tr>
+                <tr>
+                    <th>Category:</th><td>sebastianfoth\Text</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
