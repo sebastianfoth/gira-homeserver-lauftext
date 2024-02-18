@@ -4,27 +4,33 @@ Logic for Gira HomeServer Scrolling Text.
 
 ![img.png](img.png)
 
-## 1. How to build this project manually
+## 1. How to install
+1. Download the HSL File from https://github.com/sebastianfoth/gira-homeserver-lauftext/releases/tag/1.0
+2. Open your "Gira Experte"
+3. Import the downloaded HSL File as logic into "Gira Experte" and restart it
+4. You can now use the logic in your graphical editor via `sebastianfoth\Text\Scroll Text` or `sebastianfoth\Text\Lauftext`
 
-### 1.1 Prerequesites
+## 2. How to build this project manually
+
+### 2.1 Prerequesites
 
 - Make sure you are using Python 2.7
 
-### 1.2 Steps
+### 2.2 Steps
 
 1. Get the Gira API Documentation from https://partner.gira.de/attachment/Schnittstelleninformationen_4685_1651045403.zip
 2. Open the .zip file and copy the files from `Schnittstelleninformationen\HSL\HSL2 SDK 2.0.7\framework` into the root folder of this project
 3. Run `python generator.pyc "lauftext" UTF-8`
-4. Import the file `\projects\lauftext\release\1700_Lauftext.hsl` as Logic into Gira
+4. Import the file `\projects\lauftext\release\1700_Lauftext.hsl` as Logic into "Gira Experte"
 
-## 2. Coming Soon (tm)
+## 3. Coming Soon (tm)
 
 1. Build Script for HSL File
 2. Build Script for HSLZ File
 3. Automated tests
 4. Multiple Translations
 
-## 3. License
+## 4. License
 
 MIT License
 
