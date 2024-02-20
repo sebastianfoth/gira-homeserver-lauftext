@@ -26,7 +26,7 @@
 ########################################################################################################
 ##** Code created by generator - DO NOT CHANGE! **##
 
-class Lauftext10700(hsl20_4.BaseModule):
+class Lauftext20017(hsl20_4.BaseModule):
 
     def __init__(self, homeserver_context):
         hsl20_4.BaseModule.__init__(self, homeserver_context, "sebastianfoth_text_lauftext")

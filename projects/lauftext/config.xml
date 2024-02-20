@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <config>
     <modules>
-        <module category="sebastianfoth\Text" context="sebastianfoth_text_lauftext" id="10700" name="Lauftext" version="1.0">
+        <module category="sebastianfoth\Text" context="sebastianfoth_text_lauftext" id="20017" name="Lauftext" version="1.1">
             <inputs>
                 <input type="string" const_name="input_text" init_value="">Text</input>
                 <input type="number" const_name="input_update_in_sec" init_value="1">Update (sec)</input>
